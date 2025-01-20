@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 90vw;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+nav,
+#mainheader,
+#mainsection,
+#mainfooter,
+#aside {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+#mainheader,
+#mainfooter {
+    background-color: aquamarine;
+    text-align: center;
+}
+
+nav {
+    background-color: aquamarine;
+
+}
+
+nav>ul>li {
+    list-style: none;
+    display: inline-block;
+    width: 50px;
+    padding: 15px;
+}
+
+nav>ul>li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#mainsection {
+    width: 70%;
+    display: inline-block;
+
+}
+
+#mainsection>article {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+#mainsection>article>header {
+    background-color: chartreuse;
+}
+
+#mainsection>article>header {
+    background-color: rgb(152, 172, 132);
+}
+
+#aside>p:nth-child(odd) {
+    background-color: rgb(0, 255, 229);
+
+}
+
+#aside>p:nth-child(even) {
+    background-color: rgb(255, 191, 0);
+
+}
+
+#aside {
+    width: 20%;
+    /* background-color: lightblue; */
+    display: inline-block;
+
+
+}
+
+#aside>p {
+    margin: 5px;
+}
+
+
+
+  

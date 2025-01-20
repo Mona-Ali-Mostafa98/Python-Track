@@ -1,0 +1,16 @@
+#mainsection {
+    width: 80vw;
+    display: inline-block;
+
+}
+
+#aside {
+    width: 20%;
+    /* background-color: lightblue; */
+    display: none;
+
+}
+
+      /* @media screen and (orientation:portrait) {
+            
+        } */
