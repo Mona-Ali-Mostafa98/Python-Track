@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+
+        /*
+        * define use     --variable_name: yellow;
+        * Use border:     var(--variable_name)
+        */
+
+        :root {
+            --default-color: red;
+        }
+
+        body {
+            --default-color: red;
+        }
+
+        section {
+            width: 200px;
+            height: 200px;
+            background-color: var(--default-color);
+        }
+    </style>
+</head>
+<body>
+<section>
+
+</section>
+</body>
+</html>

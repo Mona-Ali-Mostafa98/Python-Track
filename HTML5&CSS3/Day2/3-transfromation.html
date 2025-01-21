@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title></title>
+    <style>
+        /*
+        * transform:
+                rotate(deg) ,
+                skew(deg)
+                translate(x,y) ,  values with px
+                scale(x,y) ,  like opacity take values without px
+        * transform:rotate(0deg) scale(1.2);
+
+        * transition make changes in time
+        * transition: opacity 4s , transform 4s;
+        * timing function for transition : ex: ease-in , ease-out, ease-in-out
+        */
+
+        /*section {
+            width: 150px;
+            height: 150px;
+            padding: 10px;
+            border: 1px solid black;
+            margin: 100px auto;
+            transform: rotate(-50deg);
+            transform: scale(2,2);
+            transform: translate(200px,200px);
+            transform: skew(50deg);
+            transform: rotate(50deg) scale(2);
+        }*/
+
+        section{
+            width:1000px;
+            height: 500px;
+            margin: 10px auto;
+            padding: 10px;
+        }
+
+        div {
+            display: inline-block;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            border-radius: 50%;
+            opacity: .6;
+            /*transition: transform 2s, opacity 2s;*/
+            transition: all 2s;
+        }
+
+        p {
+            opacity: 0;
+            /*display: none;*/
+        }
+
+        img:hover {
+            transform: scale(1.5);
+            opacity: 1;
+        }
+
+        img:hover ~ p{
+            opacity: 1;
+        }
+        div:hover  p{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Transformation-->
+<!--    <section>-->
+<!--        ItI Zag-->
+<!--    </section>-->
+
+    <!-- Transition-->
+    <section>
+        <div class="">
+            <img alt="" src="../images/01.jpg"/>
+            <p>Image 1</p>
+        </div>
+        <div>
+            <img alt="" src="../images/02.jpg"/>
+            <p>Image 2</p>
+        </div>
+        <div>
+            <img alt="" src="../images/03.jpg"/>
+            <p>Image 3</p>
+        </div>
+        <div>
+            <img alt="" src="../images/04.jpg"/>
+            <p>Image 4</p>
+        </div>
+    </section>
+</body>
+</html>

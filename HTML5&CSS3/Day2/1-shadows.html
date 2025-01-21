@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>shadows</title>
+    <style>
+        /*
+            Shadow by default show bottom right shape
+            box-shadow: offset-x offset-y blur spread color
+            box-shadow: color offset-x offset-y blur spread
+
+            ** use to give shadows for product cards
+            ** inset (flipping) shadow on image
+
+            ** text-shadow
+            ** offset 1 , 2
+        */
+        section{
+            width:300px;
+            height:300px;
+            border:1px solid black;
+            margin:50px auto;
+            /*box-shadow: -10px -10px 100px red inset, 10px 10px 100px blue inset;*/
+            box-shadow: 5px 5px 10px lightgray;
+        }
+
+        p{
+            font-size: 60px;
+            color: red;
+            text-shadow: 2px 2px black, -2px -2px blue;
+        }
+
+    </style>
+</head>
+<body>
+<!--    <section>-->
+
+<!--    </section>-->
+
+    <p>ITI ZAG</p>
+</body>
+</html>

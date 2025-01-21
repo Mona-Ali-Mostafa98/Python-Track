@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        /*
+        *
+        *
+        *
+        *
+        *
+        *
+        */
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #mainwrapper {
+            width: 80vw;
+            margin: 20px auto;
+            border: 1px solid black;
+            height: 80vh;
+            padding: 5px;
+            display: grid;
+            grid-template-areas: "header header header"
+                "nav nav nav"
+                "content test asidetwo"
+                "content test asideone"
+                "footer footer footer";
+            grid-template-columns: 2fr 0.5fr 1fr;
+            grid-template-rows: 1fr 1fr 2fr 2fr 1fr;
+            gap: 10px;
+        }
+
+            #mainwrapper > section {
+                border: 1px solid black;
+                background-color: lightyellow;
+            }
+
+        #header {
+            grid-area:header;
+        }
+
+        #nav {
+            grid-area: nav;
+        }
+
+        #content {
+            grid-area: content;
+        }
+
+        #asidetwo {
+            grid-area: asidetwo;
+        }
+
+        #asideone {
+            grid-area: asideone;
+        }
+
+        #footer {
+            grid-area: footer;
+        }
+        div{
+            grid-area:test;
+        }
+    </style>
+</head>
+<body>
+    <section id="mainwrapper">
+        <section id="header">Header</section>
+        <section id="nav">Nav</section>
+        <section id="content">Content</section>
+        <section id="asideone">asideone</section>
+        <section id="asidetwo">asidetwo</section>
+        <section id="footer">footer</section>
+        <div>Test Div</div>
+    </section>
+</body>
+</html>
