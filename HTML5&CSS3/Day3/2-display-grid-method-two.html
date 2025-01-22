@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #main {
+            text-align: center;
+            width: 80vw;
+            height: 80vh;
+            border: 2px solid black;
+            margin: 10px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-areas: "header header header"
+                                "nav nav nav"
+                                "content test aside1"
+                                "content test aside2"
+                                "footer footer footer";
+            grid-template-columns: 2fr .5fr 1fr ;
+            grid-template-rows: 1fr 1fr 2fr 2fr 1fr;
+            gap: 5px 10px;
+        }
+
+        #main>section , #main>aside{
+            border: 2px solid black;
+        }
+
+        #mainheader {
+            grid-area: header;
+        }
+
+        #mainnav {
+            grid-area: nav;
+        }
+
+        #maincontent {
+            grid-area: content;
+        }
+
+        #mainaside1 {
+            grid-area: asideone;
+        }
+
+        #mainaside2 {
+            grid-area: asidetwo;
+        }
+
+        #mainfooter {
+            grid-area: footer;
+        }
+
+        #test {
+            grid-area: test;
+        }
+
+    </style>
+</head>
+<body>
+<section id="main">
+    <section id="mainheader">Header</section>
+    <section id="mainnav"> nav </section>
+    <section id="maincontent">Content</section>
+    <section id="test">Content</section>
+    <aside id="aside1">Aside 1</aside>
+    <aside id="aside2">Aside 1</aside>
+    <section id="mainfooter">Footer</section>
+</section>
+</body>
+</html>

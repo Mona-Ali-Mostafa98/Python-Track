@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #mymap {
+            width: 600px;
+            height: 600px;
+        }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyB90FxtYG_ybAYXGkz0ybkmkboE2nEbezI"></script>
+    <script>
+        window.addEventListener('load', function () {
+
+
+        });//end of load
+        function getposition(position) {
+            // alert("success");
+            var lat = position.coords.latitude;
+            var lon = position.coords.longitude;
+            //var latlon = lat + " , " + lon;
+           // mymap.innerText = latlon;
+            // to deal with google : 
+            //1- create object googlemap with current lat lon : location 
+            //2- specs for map : {zoom :16 , center : location}
+            //3- display map 
+            //console.log(position);
+            //1-
+            var location = new google.maps.LatLng(lat, lon);
+            //2- specify specs of map : zoom : , center
+            var specs = { zoom: 17, center: location };
+            // 3 retrive map and display map
+            new google.maps.Map(mymap, specs);
+        }
+        function errorhandlere(error) {
+            alert("Error");
+            //console.log(error);
+        }
+        function getlocationdata() {
+            //1- check availability if geolocation inuser browser
+            if (navigator.geolocation) {
+                // exist
+                // 2- get persmission : getCurrentPosition
+                this.navigator.geolocation.getCurrentPosition(getposition, errorhandlere);
+
+
+            } else {
+                //not exist
+                mymap.innerText = "Update Your Browser and Try Again !";
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="Getlocation" onclick="getlocationdata();"/>
+    <div id="mymap"></div>
+</body>
+</html>

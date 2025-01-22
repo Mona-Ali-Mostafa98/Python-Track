@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        section{
+            width:400px;
+            height:400px;
+            border:2px solid black;
+            padding:5px;
+            margin:20px;
+            float:left;
+            text-align:center;
+        }
+        img{
+            width:100px;
+            height:100px;
+            margin:10px;
+        }
+    </style>
+    <script>
+        window.addEventListener('load', function () {
+            // left : dragenter , drop  , dragover
+            left = this.document.getElementById('left');
+            left.addEventListener('drop', dropped);
+            left.addEventListener('dragenter', enterdrag);
+            left.addEventListener('dragover', overdrag);
+            //right : dragleave , 
+            right = this.document.getElementById('right');
+            right.addEventListener('dragleave', leavedrag);
+
+            //images : dragstart ,dragend 
+            allimages = this.document.images;
+            for (var i = 0; i < allimages.length; i++) {
+                allimages[i].addEventListener('dragstart', startdrag);
+                allimages[i].addEventListener('dragend', enddrag);
+            } 
+
+        });//end of load
+        function startdrag(e) {
+            /*console.log(e.target.outerHTML);*/
+            e.dataTransfer.setData('myimg', e.target.outerHTML);
+
+        }
+        function enddrag(e) {
+            e.preventDefault();
+            e.target.style.display = "none";
+        }
+        function dropped(e) {
+            e.preventDefault();
+            /*console.log(e.dataTransfer.getData('myimg'));*/
+            left.innerHTML += e.dataTransfer.getData('myimg');
+           // console.log(e);
+        }
+        function overdrag(e) {
+            e.preventDefault();
+        }
+        function leavedrag(e) {
+            e.preventDefault();
+        }
+        function enterdrag(e) {
+            e.preventDefault();
+        }
+    </script>
+</head>
+<body>
+    <section id="left">
+
+    </section>
+    <section id="right">
+        <img src="UP/1.jpg" data-stock="5" data-price="100" />
+        <img src="UP/2.jpg" />
+        <img src="UP/3.jpg" />
+        <img src="UP/4.jpg" />
+        <img src="UP/5.jpg" />
+        <img src="UP/6.jpg" />
+        <img src="UP/7.jpg" />
+        <img src="UP/8.jpg" />
+        <img src="UP/9.jpg" />
+    </section>
+</body>
+</html>
