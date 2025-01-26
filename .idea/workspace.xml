@@ -5,8 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43ab07bb-ce8f-4270-b11d-b5f5ccfb9462" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/HTML5&amp;CSS3/.idea/HTML5&amp;CSS3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5&amp;CSS3/.idea/HTML5&amp;CSS3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML5&amp;CSS3/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5&amp;CSS3/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/Day2/00-lists-breadcrumb.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/Day2/images/01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/Day2/images/02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/Day2/images/03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/Day2/images/04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/Day2/images/05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/Day2/images/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/Day2/images/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/Day2/images/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/Day2/images/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/Day2/images/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/Day2/images/labtop_bg2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/Day2/images/laptop_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/Day2/images/p4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/Day2/images/p5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/Day2/images/pexels-christina-morillo-1181210.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,10 +47,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JavaScript Debug.startertemplet.html.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/ITI - Courses/Python-Track/HTML5&CSS3/Day3",
+    "last_opened_file_path": "D:/ITI - Courses/Python-Track/Bootstrap/Day2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -47,6 +63,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ITI - Courses\Python-Track\Bootstrap\Day2" />
       <recent name="D:\ITI - Courses\Python-Track\HTML5&amp;CSS3\Day3" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -71,6 +88,8 @@
       <workItem from="1737372243405" duration="2538000" />
       <workItem from="1737420459487" duration="12101000" />
       <workItem from="1737527245649" duration="13391000" />
+      <workItem from="1737618185971" duration="7237000" />
+      <workItem from="1737875403615" duration="13141000" />
     </task>
     <task id="LOCAL-00001" summary="Day one without FWD and RWD , it 's a task">
       <option name="closed" value="true" />
